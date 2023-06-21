@@ -1,27 +1,26 @@
 import './App.css';
+import React, { useState } from 'react';
 
 function App() {
+  const [glow, setGlow] = useState("")
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src="Octocat.png" className="App-logo" alt="logo" />
-        <p>
-          GitHub Codespaces <span className="heart">♥️</span> React
-        </p>
-        <p className="small">
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
-      </header>
+    <div className="App" >
+      <div className={`light red ${glow === "red" ? "glow" : ""}`} 
+      onClick={() => {
+        setGlow("red")
+      }} 
+      ></div>
+      <div className={`light yellow ${glow === "yellow" ? "glow" : ""}`} 
+      onClick={() => {
+        setGlow("yellow")
+      }}
+       ></div>
+      <div className={`light green ${glow === "green" ? "glow" : ""}`}
+        onClick={() => 
+          setGlow("green"
+          )}
+      ></div>
     </div>
   );
 }
