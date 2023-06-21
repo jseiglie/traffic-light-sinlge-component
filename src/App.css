@@ -1,3 +1,19 @@
+.wrapper{
+  background-color: black;
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 10%;
+  margin-top: 5rem;
+  padding: 2rem;
+}
+
+.red,.yellow{
+  margin-bottom: 1rem;
+}
+
 .red{
   background-color: red;
 }
@@ -11,11 +27,11 @@
 }
 
 .glow{
-  background-color: blue;
+  box-shadow: 0px 0px 10px 5px whitesmoke;
 }
 
 .light {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   border-radius: 100%;
 }
