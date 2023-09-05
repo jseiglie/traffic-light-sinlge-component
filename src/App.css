@@ -1,6 +1,6 @@
 .wrapper{
   background-color: black;
-  width: 10%;
+  width: 20%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,6 +26,11 @@
   background-color: green;
 }
 
+.purple {
+  background-color: purple;
+  margin-top: 1rem;
+}
+
 .glow{
   box-shadow: 0px 0px 10px 5px whitesmoke;
 }
@@ -34,4 +39,12 @@
   width: 100px;
   height: 100px;
   border-radius: 100%;
+}
+
+.show{
+  visibility: visible;
+}
+
+.hidden {
+  display: none;
 }
